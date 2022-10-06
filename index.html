@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/password.js">
+
+  </script>
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      Password Generator
+    </div>
+    <div class="password-display box">
+      <p id="password">PT1x1f5DaFx</p>
+      <span class="material-symbols-outlined" id="copier">
+        content_copy
+      </span>
+    </div>
+    <div class="password-controls box">
+      <div class="fl-ht space-between clength">
+        <div class="mv-at">
+          Character Length
+        </div>
+        <div class="ft-lg cyan" id="pwd-length">
+          10
+        </div>
+      </div>
+      <div class="">
+        <input type="range" min="5" max="20" value="10" class="slider" id="myRange">
+      </div>
+      <div class="">
+        <label for="include_uppercase" class="check-container">
+          Include Uppercase Letters
+          <input type="checkbox" name="" value="" id="include_uppercase" checked>
+          <span class="checkmark"></span>
+          <!-- <label for="include_uppercase"> </label> -->
+        </label>
+        <label for="include_lowercase" class="check-container">
+          Include Lowercase Letters
+          <input type="checkbox" name="" value="" id="include_lowercase" checked>
+          <span class="checkmark"></span>
+          <!-- <label for="include_uppercase"> </label> -->
+        </label>
+        <label for="include_numbers" class="check-container">
+          Include Numbers
+          <input type="checkbox" name="" value="" id="include_numbers">
+          <span class="checkmark"></span>
+          <!-- <label for="include_uppercase"> </label> -->
+        </label>
+        <label for="include_symbols" class="check-container">
+          Include Symbols
+          <input type="checkbox" name="" value="" id="include_symbols">
+          <span class="checkmark"></span>
+          <!-- <label for="include_uppercase"> </label> -->
+        </label>
+
+      </div>
+      <div class="strength-display">
+        <div class="">
+          STRENGTH
+        </div>
+        <div class="meter">
+          <div id="meter-label"> MEDIUM </div>
+          <div class="strength-box"></div>
+          <div class="strength-box"></div>
+          <div class="strength-box"></div>
+          <div class="strength-box"></div>
+        </div>
+      </div>
+      <div class="button" id="generate-btn">
+        Generate <span class="material-symbols-outlined">arrow_forward</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
